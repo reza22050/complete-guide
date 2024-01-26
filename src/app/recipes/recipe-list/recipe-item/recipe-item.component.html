@@ -1,10 +1,12 @@
 <a 
-    href="#" 
+    style="cursor: pointer;"
+    [routerLink]="[index]"
     class="list-group-item clearfix" 
-    (click)="onSelected()"
+    routerLinkActive="active"
     >
             
-    <div class="d-flex justify-content-between border border-primary p-2 bg-light">
+    <div class="d-flex justify-content-between border border-primary p-2"    
+    >
         <div class="d-flex flex-column">
             <h4 class="list-group-item-heading">{{recipe.name}}</h4>
             <p class="list-group-item-text">{{recipe.description}}</p>
